@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Receiveable.Models.MsGoodsCategory;
-import com.Receiveable.Models.MsGoodsType;
 import com.Receiveable.Services.ServiceMsGoodsCategory;
 import com.Receiveable.Services.ServiceMsGoodsType;
 

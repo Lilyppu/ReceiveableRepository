@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.Receiveable.Models.MsGoodsCategory;
 import com.Receiveable.Repository.IMsGoodsCategoryRepository;
-import com.Receiveable.Repository.IMsGoodsTypeRepository;
+
 
 @Service
 public class ServiceMsGoodsCategory {
@@ -21,6 +21,6 @@ public class ServiceMsGoodsCategory {
 	}
 	
 	public Optional<MsGoodsCategory> getGoodsTypeSingle (BigDecimal id){
-		return repoMgc.findById(null);
+		return repoMgc.findById(id);
 	}
 }
