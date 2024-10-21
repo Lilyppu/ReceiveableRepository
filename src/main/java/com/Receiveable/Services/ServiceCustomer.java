@@ -8,21 +8,20 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Receiveable.Models.MsGoods;
+import com.Receiveable.Models.Customer;
+import com.Receiveable.Repository.ICustomerRepository;
 import com.Receiveable.Repository.IMsGoodsRepository;
 
 @Service
-public class ServiceMsGoods {
+public class ServiceCustomer {
 	@Autowired
-	IMsGoodsRepository repoMg;
+	ICustomerRepository repoCust;
 	
-	public List<MsGoods> getGoodsAll (){
-		return repoMg.findAll();
+	public List<Customer> getCustAll (){
+		return repoCust.findAll();
 	}
 	
-	public Optional<MsGoods> getGoodsTypeSingle (Integer id){
-		return repoMg.findById(id);
+	public Optional<Customer> getCustSingle (Integer id){
+		return repoCust.findById(id);
 	}
-	
-
 }
